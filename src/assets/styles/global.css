@@ -1,0 +1,30 @@
+@import './fonts.css';
+@import './variables.css';
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  color: var(--gray);
+  font-family: "Spotify Circular Cyrillic", sans-serif;
+}
+
+a {
+  color: var(--white);
+  text-decoration: none;
+  user-select: none;
+  -webkit-user-drag: none;
+}
+
+button {
+  line-height: 0;
+  background: 0;
+  border: none;
+}
+
+ul {
+  list-style: none;
+}

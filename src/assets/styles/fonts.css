@@ -1,0 +1,29 @@
+@font-face {
+  font-family: "Spotify Circular Cyrillic";
+  src: local("Spotify Circular Cyrillic"), url("./fonts/CircularSpUICyrOnly-Bold.woff2") format('woff2');
+}
+
+@font-face {
+  font-family: "Spotify Circular Arabic";
+  src: local("Spotify Circular Arabic"), url("./fonts/CircularSpUIAraOnly-Bold.woff2") format('woff2');
+}
+
+@font-face {
+  font-family: "Spotify Circular Hebrew";
+  src: local("Spotify Circular Hebrew"), url("./fonts/CircularSpUIHbrOnly-Bold.woff2") format('woff2');
+}
+
+@font-face {
+  font-family: "Spotify Circular Bold";
+  src: local("Spotify Circular Bold"), url("./fonts/CircularSpUIv3T-Bold.woff2") format('woff2');
+}
+
+@font-face {
+  font-family: "Spotify Circular Book";
+  src: local("Spotify Circular Book"), url("./fonts/CircularSpUIv3T-Book.woff2") format('woff2');
+}
+
+@font-face {
+  font-family: "Spotify Circular Light";
+  src: local("Spotify Circular Light"), url("./fonts/CircularSpUIv3T-Light.woff2") format('woff2');
+}

@@ -1,0 +1,40 @@
+:root {
+  font-size: 62.5%;
+  
+  --white: #fff;
+  --white-op-09: rgba(255,255,255, 0.9);
+  --white-op-07: rgba(255,255,255, 0.7);
+  --white-op-06: rgba(255,255,255, 0.6);
+  --white-op-02: rgba(255,255,255, 0.2);
+  --white-op-01: rgba(255,255,255, 0.1);
+  
+  --black: #000;
+  --black2: #151515;
+  --black3: #181818;
+  --black-op-07: rgba(0, 0, 0, 0.7);
+
+  --gray: #b3b3b3;
+  --gray2: #a7a7a7;
+  --gray3: #282828;
+  
+  --green: #1ed760;
+
+  --sidebar-nav-bg: #000;
+  --main-bg: #121212;
+  --progress-input-bg: #5e5e5e;
+  --active-progress-bar: #1db954;
+  
+  --fs-96: 9.6rem;
+  --fs-32: 3.2rem;
+  --fs-24: 2.4rem;
+  --fs-16: 1.6rem;
+  --fs-14: 1.4rem;
+  --fs-12: 1.2rem;
+  --fs-11: 1.1rem;
+
+  --lh-36: 3.6rem;
+  --lh-28: 2.8rem;
+  --lh-32: 3.2rem;
+  --lh-24: 2.4rem;
+  --lh-16: 1.6rem;
+}
