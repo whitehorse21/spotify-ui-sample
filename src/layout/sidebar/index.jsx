@@ -14,24 +14,24 @@ import {
   HorizontalRule,
 } from "./styles"
 
-const Sidebar = props => {
+const Sidebar = ({ updateHeaderLeft }) => {
   const element = useRef(null)
 
   useEffect(() => {
     const updateSidebarWidth = () => {
       if (window.innerWidth <= 1024) {
-        props.updateHeaderLeft(0)
+        updateHeaderLeft(0)
         return
       }
 
       const right = element.current?.getBoundingClientRect().right || 0
-      props.updateHeaderLeft(right)
+      updateHeaderLeft(right)
     }
 
     updateSidebarWidth()
     window.addEventListener("resize", updateSidebarWidth)
     return () => window.removeEventListener("resize", updateSidebarWidth)
-  }, [props.updateHeaderLeft])
+  }, [updateHeaderLeft])
   return (
     <SidebarContainer ref={element}>
       <MainNav>
