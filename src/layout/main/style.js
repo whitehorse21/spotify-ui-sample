@@ -25,4 +25,8 @@ export const Container = styled.div`
   ::-webkit-scrollbar-track-piece {
     margin-top: 64px;
   }
+
+  @media (max-width: 1024px) {
+    grid-column: 1 / -1;
+  }
 `

@@ -147,4 +147,20 @@ const Container = styled.div`
       animation: ${shake} 0.4s linear;
     }
   }
+
+  @media (max-width: 1024px) {
+    width: 28%;
+    min-width: 0;
+  }
+
+  @media (max-width: 768px) {
+    order: 1;
+    width: 100%;
+    justify-content: center;
+
+    .btn {
+      width: 2.8rem;
+      height: 2.8rem;
+    }
+  }
 `

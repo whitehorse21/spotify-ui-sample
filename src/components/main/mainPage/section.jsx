@@ -57,24 +57,27 @@ const Container = styled.section`
 
   .cards {
     display: grid;
-    grid-template-columns: repeat(5, 18.15rem);
+    grid-template-columns: repeat(auto-fit, minmax(16rem, 1fr));
     grid-auto-rows: 1fr;
     gap: 2.4rem;
   }
 
   @media (max-width: 1480px) {
-    .cards {
-      grid-template-columns: repeat(5, 19.4rem);
-    }
-
     .more {
       display: flex;
     }
   }
 
-  @media (max-width: 1340px) {
+  @media (max-width: 768px) {
+    min-height: auto;
+
+    .title {
+      font-size: var(--fs-20);
+      line-height: var(--lh-24);
+    }
+
     .cards {
-      grid-template-columns: repeat(5, 18.6rem);
+      gap: 1.6rem;
     }
   }
 `

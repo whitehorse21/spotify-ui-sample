@@ -47,4 +47,22 @@ const Container = styled.section`
     grid-template-columns: repeat(3, 1fr);
     gap: 1.6rem 2.4rem;
   }
+
+  @media (max-width: 1200px) {
+    .cards {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+
+  @media (max-width: 768px) {
+    .title {
+      font-size: var(--fs-24);
+      line-height: var(--lh-28);
+    }
+
+    .cards {
+      grid-template-columns: 1fr;
+      gap: 1.2rem;
+    }
+  }
 `

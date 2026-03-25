@@ -111,4 +111,18 @@ const Container = styled.div`
   .progress-bar-container {
     flex: 1;
   }
+
+  @media (max-width: 1024px) {
+    width: 44%;
+  }
+
+  @media (max-width: 768px) {
+    order: 3;
+    width: 100%;
+    max-width: none;
+
+    .control {
+      gap: 0.4rem;
+    }
+  }
 `

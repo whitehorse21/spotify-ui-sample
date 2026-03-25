@@ -92,4 +92,12 @@ const Container = styled.header`
       }
     }
   }
+
+  @media (max-width: 768px) {
+    padding: 1.2rem 1.6rem;
+
+    .nav-container {
+      display: none;
+    }
+  }
 `

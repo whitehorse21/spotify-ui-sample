@@ -147,6 +147,11 @@ const Content = styled.main`
   position: relative;
   max-width: 195.5rem;
   z-index: 1;
+
+  @media (max-width: 768px) {
+    padding: 8rem 1.6rem 2.4rem;
+    gap: 1.6rem;
+  }
 `;
 
 const Background = styled.div`

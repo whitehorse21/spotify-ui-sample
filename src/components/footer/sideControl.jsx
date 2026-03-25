@@ -80,4 +80,23 @@ const Container = styled.div`
       }
     }
   }
+
+  @media (max-width: 1024px) {
+    width: 28%;
+    min-width: 0;
+  }
+
+  @media (max-width: 768px) {
+    order: 2;
+    width: 100%;
+    justify-content: center;
+
+    .volume-container {
+      width: min(24rem, 80vw);
+
+      & > input {
+        width: 100%;
+      }
+    }
+  }
 `

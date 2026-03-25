@@ -1,28 +1,18 @@
-import { useState, useEffect } from "react"
 import { HashRouter } from "react-router-dom"
 
 import Sidebar from "./layout/sidebar"
 import Main from "./layout/main"
 import Footer from "./layout/footer"
-import ResponsiveMessage from "./components/responsiveMessage"
 import styled from "styled-components"
 
 const App = props => {
-  const [width, setWidth] = useState(window.innerWidth)
-
-  useEffect(() => {
-    window.addEventListener("resize", () => setWidth(window.innerWidth))
-  }, [])
-
   return (
     <HashRouter>
-      {width > 1280 ? (
-        <Container>
-          <Sidebar />
-          <Main />
-          <Footer />
-        </Container>
-      ) : <ResponsiveMessage width={width} />}
+      <Container>
+        <Sidebar />
+        <Main />
+        <Footer />
+      </Container>
     </HashRouter>
   )
 }
@@ -35,4 +25,12 @@ export const Container = styled.div`
   grid-template-rows: auto 9.1rem;
   height: 100vh;
   width: 100%;
+
+  @media (max-width: 1024px) {
+    grid-template-columns: 1fr;
+  }
+
+  @media (max-width: 768px) {
+    grid-template-rows: auto 13rem;
+  }
 `

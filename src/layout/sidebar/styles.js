@@ -5,6 +5,10 @@ export const SidebarContainer = styled.aside`
   grid-row: 1;
   height: 100%;
   overflow: hidden;
+
+  @media (max-width: 1024px) {
+    display: none;
+  }
 `
 
 export const MainNav = styled.nav`

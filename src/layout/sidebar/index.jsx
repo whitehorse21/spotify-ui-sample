@@ -18,9 +18,20 @@ const Sidebar = props => {
   const element = useRef(null)
 
   useEffect(() => {
-    const right = element.current.getBoundingClientRect().right
-    props.updateHeaderLeft(right)
-  }, [props])
+    const updateSidebarWidth = () => {
+      if (window.innerWidth <= 1024) {
+        props.updateHeaderLeft(0)
+        return
+      }
+
+      const right = element.current?.getBoundingClientRect().right || 0
+      props.updateHeaderLeft(right)
+    }
+
+    updateSidebarWidth()
+    window.addEventListener("resize", updateSidebarWidth)
+    return () => window.removeEventListener("resize", updateSidebarWidth)
+  }, [props.updateHeaderLeft])
   return (
     <SidebarContainer ref={element}>
       <MainNav>
